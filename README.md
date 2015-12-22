@@ -19,10 +19,12 @@ Installation
 ------------
 You can download a released `envconsul` artifact from [the envconsul release page][Releases] on GitHub. If you wish to compile from source, you will need to have buildtools and [Go][] installed:
 
+Clone this repository into `$GOPATH/src/github.com/hashicorp/envconsul` :
+
 ```shell
-$ git clone https://github.com/hashicorp/envconsul.git
 $ cd envconsul
-$ make
+$ make updatedeps
+$ make dev
 ```
 
 This process will create `bin/envconsul` which may be invoked as a binary.
